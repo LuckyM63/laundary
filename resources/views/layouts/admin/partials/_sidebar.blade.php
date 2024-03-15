@@ -238,13 +238,13 @@
                         @if(Helpers::module_permission_check(MANAGEMENT_SECTION['order_management']))
 
                             <li class="navbar-vertical-aside-has-menu {{Request::is('admin/table/order/list/*') || Request::is('admin/table/order/details/*')?'active':''}}">
-                                <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:">
+                                {{-- <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:">
                                     <i class="tio-shopping-cart nav-icon"></i>
                                     <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
                                         {{translate('table order')}}
                                     </span>
                                     <label class="badge badge-danger">{{translate('addon')}}</label>
-                                </a>
+                                </a> --}}
                                 <ul class="js-navbar-vertical-aside-submenu nav nav-sub"
                                     style="display: {{Request::is('admin/table/order*')?'block':'none'}}">
                                     <li class="nav-item {{Request::is('admin/table/order/list/all')?'active':''}}">
@@ -599,7 +599,7 @@
                                 </ul>
                             </li>
 
-                            <li class="navbar-vertical-aside-has-menu {{Request::is('admin/customer/wallet*') ?'active':''}}">
+                            {{-- <li class="navbar-vertical-aside-has-menu {{Request::is('admin/customer/wallet*') ?'active':''}}">
                                 <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:">
                                     <i class="tio-wallet nav-icon"></i>
                                     <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
@@ -627,9 +627,9 @@
                                     </li>
 
                                 </ul>
-                            </li>
+                            </li> --}}
 
-                            <li class="navbar-vertical-aside-has-menu {{Request::is('admin/customer/loyalty-point/report') ?'active':''}}">
+                            {{-- <li class="navbar-vertical-aside-has-menu {{Request::is('admin/customer/loyalty-point/report') ?'active':''}}">
                                 <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:">
                                     <i class="tio-medal nav-icon"></i>
                                     <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
@@ -645,7 +645,7 @@
                                     </li>
 
                                 </ul>
-                            </li>
+                            </li> --}}
                             <!-- Pages -->
                             <li class="navbar-vertical-aside-has-menu {{Request::is('admin/customer/subscribed-email*')?'active':''}}">
                                 <a class="js-navbar-vertical-aside-menu-link nav-link"
@@ -747,13 +747,14 @@
 
                         @if(Helpers::module_permission_check(MANAGEMENT_SECTION['user_management']))
 
-                            <li class="navbar-vertical-aside-has-menu {{Request::is('admin/kitchen*')?'active':''}}">
+                            {{-- <li class="navbar-vertical-aside-has-menu {{Request::is('admin/kitchen*')?'active':''}}">
                                 <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle"
                                    href="javascript:">
                                     <i class="tio-user nav-icon"></i>
                                     <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
-                                            {{translate('chef')}}
+                                            {{translate('Washer man')}}
                                         </span>
+                                        
                                     <label class="badge badge-danger">{{translate('addon')}}</label>
                                 </a>
                                 <ul class="js-navbar-vertical-aside-submenu nav nav-sub"
@@ -772,7 +773,7 @@
                                     </li>
 
                                 </ul>
-                            </li>
+                            </li> --}}
                         @endif
 
                         <!-- User Management  End-->
@@ -781,19 +782,19 @@
 
                     <!-- Table Management-->
                     @if(Helpers::module_permission_check(MANAGEMENT_SECTION['table_management']))
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <small class="nav-subtitle">{{translate('table')}} {{translate('section')}}</small>
                                 <small class="tio-more-horizontal nav-subtitle-replacer"></small>
-                            </li>
+                            </li> --}}
 
                             <li class="navbar-vertical-aside-has-menu {{Request::is('admin/table/list') || Request::is('admin/table/update*') || Request::is('admin/promotion/create') || Request::is('admin/promotion/edit*') || Request::is('admin/table/index')?'active':''}}">
-                                <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:">
+                                {{-- <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:">
                                     <i class="tio-gift nav-icon"></i>
                                     <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
                                             {{translate('table')}}
                                         </span>
                                     <label class="badge badge-danger">{{translate('addon')}}</label>
-                                </a>
+                                </a> --}}
                                 <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="top: 391.823px; display: {{Request::is('admin/table/list') || Request::is('admin/table/update*') || Request::is('admin/table/index') || Request::is('admin/promotion/*')?'block':''}};">
                                     <li class="nav-item {{Request::is('admin/table/list') || Request::is('admin/table/update*') ?'active':''}}">
                                         <a class="nav-link " href="{{route('admin.table.list')}}">

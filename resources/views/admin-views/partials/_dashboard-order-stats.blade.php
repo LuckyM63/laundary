@@ -1,7 +1,7 @@
 
 <div class="col-sm-6 col-lg-3">
     <a href="{{route('admin.orders.list',['pending'])}}" class="dashboard--card">
-        <h5 class="dashboard--card__subtitle">{{translate('pending')}}</h5>
+        <h5 class="">{{translate('pending')}}</h5>
         <h2 class="dashboard--card__title">{{$data['pending']}}</h2>
         <img width="30" src="{{asset('public/assets/admin/img/icons/pending.png')}}" class="dashboard--card__img" alt="">
     </a>
@@ -22,7 +22,9 @@
 </div>
 <div class="col-sm-6 col-lg-3">
     <a href="{{route('admin.orders.list',['out_for_delivery'])}}" class="dashboard--card">
-        <h5 class="dashboard--card__subtitle">{{translate('out_for_delivery')}}</h5>
+        {{-- <h5 class="dashboard--card__subtitle">{{translate('out_for_delivery')}}</h5> --}}
+        <h4 class="dashboard--card__subtitle> {{('Ready to pickup')}}</h4>
+        <h4 class="dashboard--card__subtitle">Ready to pickup</h4>
         <h2 class="dashboard--card__title">{{$data['out_for_delivery']}}</h2>
         <img width="30" src="{{asset('public/assets/admin/img/icons/out_for_delivery.png')}}" class="dashboard--card__img" alt="">
     </a>
@@ -73,7 +75,8 @@
         <div class="order-stats__content">
             <img width="20" src="{{asset('public/assets/admin/img/icons/failed_to_deliver.png')}}" class="order-stats__img" alt="">
             <!-- <h6 class="order-stats__subtitle">{{__('messages.failed')}}</h6> -->
-            <h6 class="order-stats__subtitle">{{translate('failed_to_deliver')}}</h6>
+            {{-- <h6 class="order-stats__subtitle">{{translate('failed_to_deliver')}}</h6> --}}
+            <h6 class="order_stats_subtitle">{{('Failed_to_pickup')}}</h6>
         </div>
         <span class="order-stats__title">
             {{$data['failed']}}

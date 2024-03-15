@@ -1877,4 +1877,9 @@
   'off' => 'Off',
   'Live' => 'Live',
   'Test' => 'Test',
+  'ready to pickup' => 'Ready to pickup',
+  'Ready_to_pickup' => 'Ready to pickup',
+  'Ready to pickup' => 'Ready to pickup',
+  'wash' => 'Wash',
+  'Washer man' => 'Washer man',
 );
