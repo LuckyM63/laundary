@@ -1877,6 +1877,7 @@
   'off' => 'Off',
   'Live' => 'Live',
   'Test' => 'Test',
+
   'Subscribed List' => 'Subscribed List',
   'Subscribed_Customers' => 'Subscribed Customers',
   'Search by Email' => 'Search by Email',
@@ -1906,4 +1907,11 @@
   'send_notification' => 'Send notification',
   'Notification_Table' => 'Notification Table',
   'Offday' => 'Offday',
+
+  'ready to pickup' => 'Ready to pickup',
+  'Ready_to_pickup' => 'Ready to pickup',
+  'Ready to pickup' => 'Ready to pickup',
+  'wash' => 'Wash',
+  'Washer man' => 'Washer man',
+
 );
