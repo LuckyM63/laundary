@@ -10,7 +10,7 @@
         <strong>{{ $address['contact_person_name'] }}</strong>
     </li>
     <li>
-        <span>{{ json_encode($address)}} </span>
+       
         <span>{{ translate('contact')}}</span>
         <strong>{{ $address['contact_person_number'] }}</strong>
     </li>
