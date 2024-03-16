@@ -100,7 +100,7 @@
                                 title: '{{translate('Do you want to logout')}}?',
                                 showDenyButton: true,
                                 showCancelButton: true,
-                                confirmButtonColor: '#FC6A57',
+                                confirmButtonColor: '#006ae5',
                                 cancelButtonColor: '#363636',
                                 confirmButtonText: '{{translate('Yes')}}',
                                 denyButtonText: `{{translate('Do not Logout')}}`,
@@ -716,7 +716,7 @@
                         console.log(data)
                         if (data.data == 1) {
                             Swal.fire({
-                                confirmButtonColor: '#FC6A57',
+                                confirmButtonColor: '#006ae5',
                                 icon: 'info',
                                 title: '{{translate("Cart")}}',
                                 confirmButtonText:'{{translate("Ok")}}',
@@ -725,7 +725,7 @@
                             return false;
                         } else if (data.data == 0) {
                             Swal.fire({
-                                confirmButtonColor: '#FC6A57',
+                                confirmButtonColor: '#006ae5',
                                 icon: 'error',
                                 title: '{{translate("Cart")}}',
                                 confirmButtonText:'{{translate("Ok")}}',
@@ -735,7 +735,7 @@
                         }
                         else if (data.data == 'variation_error') {
                             Swal.fire({
-                                confirmButtonColor: '#FC6A57',
+                                confirmButtonColor: '#006ae5',
                                 icon: 'error',
                                 title: 'Cart',
                                 text: data.message
@@ -757,7 +757,7 @@
                 });
             } else {
                 Swal.fire({
-                    confirmButtonColor: '#FC6A57',
+                    confirmButtonColor: '#006ae5',
                     type: 'info',
                     title: '{{translate("Cart")}}',
                     confirmButtonText:'{{translate("Ok")}}',

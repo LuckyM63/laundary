@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 :root {
-  --c1: #ff6767;
+  --c1: #4366ee;
   --c1-rgb: 255, 103, 103;
   --c2: #006ae5;
   --tc: #334257;
@@ -159,7 +159,7 @@
 .navbar-vertical-aside-has-menu.show > .nav-link,
 .navbar-vertical .navbar-nav.nav-tabs .active > .nav-link,
 .navbar-vertical .navbar-nav.nav-tabs .active.nav-link {
-  background: rgba(255, 103, 103, 0.1);
+  background: rgba(103, 136, 255, 0.1);
   border-radius: 5px;
 }
 
@@ -335,7 +335,7 @@
 .order-stats_failed .order-stats__title,
 .order-stats_canceled .order-stats__title,
 .order-stats_packaging .order-stats__title {
-  color: #ff6d6d;
+  color: #6d85ff;
 }
 
 .order-stats:hover {
@@ -2470,14 +2470,14 @@ body > #printableAreaContent {
   font-size: 16.809px;
   font-weight: 400;
   padding-block: 4px;
-  border-top: 1px solid #f7c446;
-  border-bottom: 1px solid #f7c446;
+  border-top: 1px solid #90beed;
+  border-bottom: 1px solid #90beed;
 }
 .qr-wrapper .view-menu:hover {
-  color: #f7c446;
+  color: #90beed;
 }
 .qr-wrapper .open-time {
-  background: #dc373f;
+  background: #3748dc;
   padding: 12px 15px;
   border-radius: 8px;
   font-size: 14px;
@@ -2503,8 +2503,8 @@ body > #printableAreaContent {
 }
 
 .subtext {
-  border-top: 1px solid #f7c446;
-  border-bottom: 1px solid #f7c446;
+  border-top: 1px solid #90beed;
+  border-bottom: 1px solid #90beed;
   padding-block: 6px;
   text-align: center;
   max-width: 290px;
@@ -2609,7 +2609,7 @@ body > #printableAreaContent {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    --base: #ff7a00;
+    --base: #0066ff;
 }
 .email-format-wrapper .left-content {
     width: 100%;
@@ -2627,7 +2627,7 @@ body > #printableAreaContent {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    --base: #ff7a00;
+    --base: #0048ff;
 }
 .email-format-wrapper .left-content {
     width: 100%;

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 :root {
-    --c1: #ff6767;
+    --c1: hsl(212, 93%, 39%);
     --c1-rgb: 255, 103, 103;
     --c2: #006ae5;
     --tc: #334257;
@@ -336,7 +336,7 @@
 .order-stats_failed .order-stats__title,
 .order-stats_canceled .order-stats__title,
 .order-stats_packaging .order-stats__title {
-    color: #ff6d6d;
+    color: #006ae5;
 }
 
 .order-stats:hover {
@@ -2456,14 +2456,14 @@ body > #printableAreaContent {
         font-size: 16.809px;
         font-weight: 400;
         padding-block: 4px;
-        border-top: 1px solid #f7c446;
-        border-bottom: 1px solid #f7c446;
+        border-top: 1px solid #90beed;
+        border-bottom: 1px solid #90beed;
         &:hover {
-            color: #f7c446;
+            color: #90beed;
         }
     }
     .open-time {
-        background: #dc373f;
+        background: #3750dc;
         padding: 12px 15px;
         border-radius: 8px;
         font-size: 14px;
@@ -2489,8 +2489,8 @@ body > #printableAreaContent {
     }
 }
 .subtext {
-    border-top: 1px solid #f7c446;
-    border-bottom: 1px solid #f7c446;
+    border-top: 1px solid #90beed;
+    border-bottom: 1px solid #90beed;
     padding-block: 6px;
     text-align: center;
     max-width: 290px;

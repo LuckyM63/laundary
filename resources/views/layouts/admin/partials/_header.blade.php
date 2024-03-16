@@ -142,7 +142,7 @@
                                     title: '{{translate("Do you want to logout?")}}',
                                     showDenyButton: true,
                                     showCancelButton: true,
-                                    confirmButtonColor: '#FC6A57',
+                                    confirmButtonColor: '#006ae5',
                                     cancelButtonColor: '#363636',
                                     confirmButtonText: '{{translate("Yes")}}',
                                     cancelButtonText: `{{translate('No')}}`,

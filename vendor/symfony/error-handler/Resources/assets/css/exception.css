@@ -6,12 +6,12 @@
     --color-text: #222;
     /* when updating any of these colors, do the same in toolbar.css.twig */
     --color-success: #4f805d;
-    --color-warning: #a46a1f;
+    --color-warning: #1f56a4;
     --color-error: #b0413e;
     --color-muted: #999;
     --tab-background: #fff;
     --tab-color: #444;
-    --tab-active-background: #666;
+    --tab-active-background: #666666fa;
     --tab-active-color: #fafafa;
     --tab-disabled-background: #f5f5f5;
     --tab-disabled-color: #999;
@@ -31,7 +31,7 @@
     --background-error: var(--color-error);
     --highlight-comment: #969896;
     --highlight-default: #222222;
-    --highlight-keyword: #a71d5d;
+    --highlight-keyword: #671da7;
     --highlight-string: #183691;
     --base-0: #fff;
     --base-1: #f5f5f5;
@@ -42,14 +42,15 @@
     --base-6: #222;
 }
 
+
 .theme-dark {
     --page-background: #36393e;
     --color-text: #e0e0e0;
     --color-muted: #777;
-    --color-error: #d43934;
+    --color-error: #347cd4;
     --tab-background: #555;
     --tab-color: #ccc;
-    --tab-active-background: #888;
+    --tab-active-background: #8c98b7;
     --tab-active-color: #fafafa;
     --tab-disabled-background: var(--page-background);
     --tab-disabled-color: #777;
@@ -67,10 +68,10 @@
     --exception-title-color: var(--base-2);
     --shadow: 0px 0px 1px rgba(32, 32, 32, .2);
     --border: 1px solid #666;
-    --background-error: #b0413e;
+    --background-error: #3e64b0;
     --highlight-comment: #dedede;
     --highlight-default: var(--base-6);
-    --highlight-keyword: #ff413c;
+    --highlight-keyword: #3c3fff;
     --highlight-string: #70a6fd;
     --base-0: #2e3136;
     --base-1: #444;

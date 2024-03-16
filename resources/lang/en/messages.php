@@ -1877,7 +1877,6 @@
   'off' => 'Off',
   'Live' => 'Live',
   'Test' => 'Test',
-
   'Subscribed List' => 'Subscribed List',
   'Subscribed_Customers' => 'Subscribed Customers',
   'Search by Email' => 'Search by Email',
@@ -1894,9 +1893,6 @@
   'earning_report_overview' => 'Earning report overview',
   'sold' => 'Sold',
   'Total_Sale' => 'Total Sale',
-  'value_is_grater
-                                   _or_equal_to_20MB' => 'Value is grater
-                                    or equal to 20MB',
   'Add new notification' => 'Add new notification',
   'send_Notification' => 'Send Notification',
   'not_more_than_100_characters' => 'Not more than 100 characters',
@@ -1907,11 +1903,10 @@
   'send_notification' => 'Send notification',
   'Notification_Table' => 'Notification Table',
   'Offday' => 'Offday',
-
   'ready to pickup' => 'Ready to pickup',
   'Ready_to_pickup' => 'Ready to pickup',
   'Ready to pickup' => 'Ready to pickup',
   'wash' => 'Wash',
   'Washer man' => 'Washer man',
-
+  'Location' => 'Location',
 );

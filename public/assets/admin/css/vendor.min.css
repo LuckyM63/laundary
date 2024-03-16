@@ -768,7 +768,7 @@
 }
 
 :root {
-    --tagify-dd-color-primary: #FC6A57;
+    --tagify-dd-color-primary: blue;
     --tagify-dd-bg-color: white
 }
 
@@ -1332,8 +1332,8 @@
 }
 
 .fc-icon, .fc-unselectable {
-    -moz-user-select: none;
-    -ms-user-select: none
+    --moz-user-select: none;
+    --ms-user-select: none
 }
 
 .fc .fc-button, .fc-icon {
@@ -3746,7 +3746,7 @@ span.flatpickr-weekday {
 
 .daterangepicker .ranges li.active {
     background-color: #08c;
-    color: #fff
+    color: #ffffff
 }
 
 @media (min-width: 564px) {
@@ -4994,7 +4994,7 @@ span.flatpickr-weekday {
 }
 
 .leaflet-overlay-pane svg {
-    -moz-user-select: none
+    --moz-user-select: none
 }
 
 .leaflet-pane {

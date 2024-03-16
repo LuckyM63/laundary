@@ -40,7 +40,7 @@
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: #FC6A57;
+            background: #006ae5;
         }
     </style> -->
 
@@ -228,7 +228,7 @@
             type: 'warning',
             showCancelButton: true,
             cancelButtonColor: 'default',
-            confirmButtonColor: '#FC6A57',
+            confirmButtonColor: '#006ae5',
             cancelButtonText: '{{ translate('No') }}',
             confirmButtonText: '{{ translate('Yes') }}',
             reverseButtons: true
@@ -246,7 +246,7 @@
             type: 'warning',
             showCancelButton: true,
             cancelButtonColor: 'default',
-            confirmButtonColor: '#FC6A57',
+            confirmButtonColor: '#006ae5',
             cancelButtonText: '{{ translate('No') }}',
             confirmButtonText: '{{ translate('Yes') }}',
             reverseButtons: true

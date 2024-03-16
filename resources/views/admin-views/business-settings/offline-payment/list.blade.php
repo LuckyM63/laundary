@@ -130,7 +130,7 @@
                 title: '{{translate('Are you sure')}}?',
                 text: "{{translate('You will not be able to revert this')}}!",
                 showCancelButton: true,
-                confirmButtonColor: '#FC6A57',
+                confirmButtonColor: '#006ae5',
                 cancelButtonColor: '#EA295E',
                 confirmButtonText: '{{translate('Yes, delete it')}}!'
             }).then((result) => {
