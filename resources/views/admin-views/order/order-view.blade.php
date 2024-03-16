@@ -606,6 +606,10 @@
                                         {{translate('Assign_Delivery_Man')}}
                                     </a>
 
+                                    <a href="#" class="btn btn-primary btn-block d-flex gap-1 justify-content-center align-items-center" data-toggle="modal" data-target="#Location00">
+                                        <img width="17" src="{{asset('public/assets/admin/img/icons/assain_delivery_man.png')}}" alt="">
+                                        {{translate('Location')}}
+                                    </a>
                                    
 
                                    
@@ -914,6 +918,37 @@
                                 <a id="{{$deliveryMan->id}}" onclick="addDeliveryMan(this.id)" class="btn btn-primary btn-sm">{{translate('Assign')}}</a>
                             </li>
                         @endforeach
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Location00" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fs-5" id="assignDeliveryManLabel">{{$order->delivery_address['latitude'] }}, {{$order->delivery_address['longitude']}}</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    NO BODY on line 936 
+                    \resources\views\admin-views\order\order-view.blade.php
+                    <ul class="list-group">
+                        <!-- @foreach($delivery_man as $deliveryMan)
+                            <li class="list-group-item d-flex flex-wrap align-items-center gap-3 justify-content-between">
+                                <div class="media align-items-center gap-2 flex-wrap">
+                                    <div class="avatar">
+                                        <img class="img-fit rounded-circle" loading="lazy" decoding="async"
+                                         onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                         src="{{asset('/storage/app/public/delivery-man/'.$deliveryMan->image)}}" alt="Jhon Doe">
+                                    </div>
+                                    <span>{{$deliveryMan['f_name'].' '.$deliveryMan['l_name']}}</span>
+                                </div>
+                                <a id="{{$deliveryMan->id}}" onclick="addDeliveryMan(this.id)" class="btn btn-primary btn-sm">{{translate('Assign')}}</a>
+                            </li>
+                        @endforeach -->
                     </ul>
                 </div>
             </div>

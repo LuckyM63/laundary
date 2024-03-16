@@ -224,6 +224,8 @@ class OrderController extends Controller
             Toastr::info(translate('No order found!'));
             return back();
         }
+        // $delivery_address = $this->delivery_address->where(['id'=>1]);
+        // dd($delivery_address);
 
         $delivery_man = $this->delivery_man->where(['is_active'=>1])
             ->where(function($query) use ($order) {
@@ -233,11 +235,20 @@ class OrderController extends Controller
             ->get();
 
         //remaining delivery time
+        $delivery_address_id = $order->delivery_address_id;
+        $order['delivery_address'] = NULL;
+        if ($delivery_address_id){
+            $delivery_address = CustomerAddress::where('id',$delivery_address_id)->first();
+            $order['delivery_address'] = $delivery_address;
+        }
+        
+        
         $delivery_date_time = $order['delivery_date'] . ' ' . $order['delivery_time'];
         $ordered_time = Carbon::createFromFormat('Y-m-d H:i:s', date("Y-m-d H:i:s", strtotime($delivery_date_time)));
         $remaining_time = $ordered_time->add($order['preparation_time'], 'minute')->format('Y-m-d H:i:s');
         $order['remaining_time'] = $remaining_time;
-
+        
+        
         return view('admin-views.order.order-view', compact('order', 'delivery_man'));
     }
 
