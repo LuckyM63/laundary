@@ -40,7 +40,7 @@
             function startSplitMouse(evt) {
                 if (opts.outline)
                     zombie = zombie || bar.clone(false).insertAfter(A);
-                panes.css("--webkit-user-select", "none");   // Safari selects A/B text on a move
+                panes.css("-webkit-user-select", "none");   // Safari selects A/B text on a move
                 bar.addClass(opts.activeClass);
                 $('<div class="splitterMask"></div>').insertAfter(bar);
                 A._posSplit = A[0][opts.pxSplit] - evt[opts.eventPos];
@@ -67,7 +67,7 @@
                     zombie = null;
                     resplit(newPos);
                 }
-                panes.css("--webkit-user-select", "text");   // let Safari select text again
+                panes.css("-webkit-user-select", "text");   // let Safari select text again
                 $(document)
                         .unbind("mousemove", doSplitMouse)
                         .unbind("mouseup", endSplitMouse);
@@ -125,7 +125,7 @@
             var panes = $(">*", splitter[0]).css({
                 position: "absolute",          // positioned inside splitter container
                 "z-index": "1",               // splitbar is positioned above
-                "--moz-outline-style": "none"   // don't show dotted outline
+                "-moz-outline-style": "none"   // don't show dotted outline
             });
             var A = $(panes[0]);      // left  or top
             var B = $(panes[1]);      // right or bottom
@@ -151,8 +151,8 @@
             var bar = $(panes[2] || '<div></div>')
                     .insertAfter(A).css("z-index", "100").append(focuser)
                     .attr({"class": opts.splitbarClass, unselectable: "on"})
-                    .css({position: "absolute",   "user-select": "none", "--webkit-user-select": "none",
-                        "-khtml-user-select": "none", "--moz-user-select": "none", "top": "0px"})
+                    .css({position: "absolute",   "user-select": "none", "-webkit-user-select": "none",
+                        "-khtml-user-select": "none", "-moz-user-select": "none", "top": "0px"})
                     .bind("mousedown", startSplitMouse);
             // Use our cursor unless the style specifies a non-default cursor
             if (/^(auto|default|)$/.test(bar.css("cursor")))

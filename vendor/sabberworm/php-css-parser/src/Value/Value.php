@@ -136,8 +136,8 @@ abstract class Value implements Renderable
         } elseif ($oParserState->comes('url', true)) {
             $oValue = URL::parse($oParserState);
         } elseif (
-            $oParserState->comes('calc', true) || $oParserState->comes('--webkit-calc', true)
-            || $oParserState->comes('--moz-calc', true)
+            $oParserState->comes('calc', true) || $oParserState->comes('-webkit-calc', true)
+            || $oParserState->comes('-moz-calc', true)
         ) {
             $oValue = CalcFunction::parse($oParserState);
         } elseif ($oParserState->comes("'") || $oParserState->comes('"')) {

@@ -44,8 +44,8 @@
 html {
     font-family: sans-serif;
     line-height: 1.15;
-    --webkit-text-size-adjust: 100%;
-    --webkit-tap-highlight-color: transparent
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -85,11 +85,11 @@ p {
 
 abbr[data-original-title], abbr[title] {
     text-decoration: underline;
-    --webkit-text-decoration: underline dotted;
+    -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
     cursor: help;
     border-bottom: 0;
-    --webkit-text-decoration-skip-ink: none;
+    -webkit-text-decoration-skip-ink: none;
     text-decoration-skip-ink: none
 }
 
@@ -207,7 +207,7 @@ caption {
 th {
     font-weight: 400;
     text-align: inherit;
-    text-align: --webkit-match-parent
+    text-align: -webkit-match-parent
 }
 
 label {
@@ -221,7 +221,7 @@ button {
 
 button:focus {
     outline: 1px dotted;
-    outline: 5px auto --webkit-focus-ring-color
+    outline: 5px auto -webkit-focus-ring-color
 }
 
 button, input, optgroup, select, textarea {
@@ -248,14 +248,14 @@ select {
 }
 
 [type=button], [type=reset], [type=submit], button {
-    ---webkit-appearance: button
+    --webkit-appearance: button
 }
 
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer
 }
 
-[type=button]::--moz-focus-inner, [type=reset]::--moz-focus-inner, [type=submit]::--moz-focus-inner, button::--moz-focus-inner {
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
     padding: 0;
     border-style: none
 }
@@ -299,22 +299,22 @@ progress {
     vertical-align: baseline
 }
 
-[type=number]::--webkit-inner-spin-button, [type=number]::--webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
     height: auto
 }
 
 [type=search] {
     outline-offset: -2px;
-    --webkit-appearance: none
+    -webkit-appearance: none
 }
 
-[type=search]::--webkit-search-decoration {
-    --webkit-appearance: none
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
 }
 
-::--webkit-file-upload-button {
+::-webkit-file-upload-button {
     font: inherit;
-    --webkit-appearance: button
+    -webkit-appearance: button
 }
 
 output {
@@ -2305,7 +2305,7 @@ pre code {
         display: block;
         width: 100%;
         overflow-x: auto;
-        --webkit-overflow-scrolling: touch
+        -webkit-overflow-scrolling: touch
     }
 
     .table-responsive-sm > .table-bordered {
@@ -2318,7 +2318,7 @@ pre code {
         display: block;
         width: 100%;
         overflow-x: auto;
-        --webkit-overflow-scrolling: touch
+        -webkit-overflow-scrolling: touch
     }
 
     .table-responsive-md > .table-bordered {
@@ -2331,7 +2331,7 @@ pre code {
         display: block;
         width: 100%;
         overflow-x: auto;
-        --webkit-overflow-scrolling: touch
+        -webkit-overflow-scrolling: touch
     }
 
     .table-responsive-lg > .table-bordered {
@@ -2344,7 +2344,7 @@ pre code {
         display: block;
         width: 100%;
         overflow-x: auto;
-        --webkit-overflow-scrolling: touch
+        -webkit-overflow-scrolling: touch
     }
 
     .table-responsive-xl > .table-bordered {
@@ -2357,7 +2357,7 @@ pre code {
         display: block;
         width: 100%;
         overflow-x: auto;
-        --webkit-overflow-scrolling: touch
+        -webkit-overflow-scrolling: touch
     }
 
     .table-responsive-xxl > .table-bordered {
@@ -2369,7 +2369,7 @@ pre code {
     display: block;
     width: 100%;
     overflow-x: auto;
-    --webkit-overflow-scrolling: touch
+    -webkit-overflow-scrolling: touch
 }
 
 .table-responsive > .table-bordered {
@@ -2403,7 +2403,7 @@ pre code {
     border: 0
 }
 
-.form-control:--moz-focusring {
+.form-control:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #1e2022
 }
@@ -2416,12 +2416,12 @@ pre code {
     box-shadow: 0 0 10px rgba(55, 125, 255, .1)
 }
 
-.form-control::--webkit-input-placeholder {
+.form-control::-webkit-input-placeholder {
     color: #97a4af;
     opacity: 1
 }
 
-.form-control::--moz-placeholder {
+.form-control::-moz-placeholder {
     color: #97a4af;
     opacity: 1
 }
@@ -2447,8 +2447,8 @@ pre code {
 }
 
 input[type=date].form-control, input[type=datetime-local].form-control, input[type=month].form-control, input[type=time].form-control {
-    --webkit-appearance: none;
-    --moz-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none
 }
 
@@ -2841,8 +2841,8 @@ textarea.form-control {
     color: #677788;
     text-align: center;
     vertical-align: middle;
-    --webkit-user-select: none;
-    --moz-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     background-color: transparent;
@@ -3929,7 +3929,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     display: block;
     min-height: 1.4rem;
     padding-inline-start: 1.5rem;
-    --webkit-print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
     /* color-adjust: exact */
 }
 
@@ -4061,9 +4061,9 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     height: .75rem;
     background-color: #d6dbeb;
     border-radius: .5rem;
-    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, --webkit-transform .15s ease-in-out;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out;
     transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, --webkit-transform .15s ease-in-out
+    transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -4074,7 +4074,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
     background-color: #fff;
-    --webkit-transform: translateX(.75rem);
+    -webkit-transform: translateX(.75rem);
     transform: translateX(.75rem)
 }
 
@@ -4095,8 +4095,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     background: #fff url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='%2371869d' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.72,15.78a.75.75,0,0,1-.53.22h-.38a.77.77,0,0,1-.53-.22L6.15,10.64a.5.5,0,0,1,0-.71l.71-.71a.49.49,0,0,1,.7,0L12,13.67l4.44-4.45a.5.5,0,0,1,.71,0l.7.71a.5.5,0,0,1,0,.71Z'/%3E%3C/svg%3E") no-repeat right .5rem center/1rem 1rem;
     border: .0625rem solid #e7eaf3;
     border-radius: .3125rem;
-    --webkit-appearance: none;
-    --moz-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none
 }
 
@@ -4126,7 +4126,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     display: none
 }
 
-.custom-select:--moz-focusring {
+.custom-select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #1e2022
 }
@@ -4219,8 +4219,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     height: 1.4rem;
     padding: 0;
     background-color: transparent;
-    --webkit-appearance: none;
-    --moz-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none
 }
 
@@ -4228,11 +4228,11 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     outline: 0
 }
 
-.custom-range:focus::--webkit-slider-thumb {
+.custom-range:focus::-webkit-slider-thumb {
     box-shadow: 0 0 0 1px #fff, 0 0 10px rgba(55, 125, 255, .1)
 }
 
-.custom-range:focus::--moz-range-thumb {
+.custom-range:focus::-moz-range-thumb {
     box-shadow: 0 0 0 1px #fff, 0 0 10px rgba(55, 125, 255, .1)
 }
 
@@ -4240,35 +4240,35 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     box-shadow: 0 0 0 1px #fff, 0 0 10px rgba(55, 125, 255, .1)
 }
 
-.custom-range::--moz-focus-outer {
+.custom-range::-moz-focus-outer {
     border: 0
 }
 
-.custom-range::--webkit-slider-thumb {
+.custom-range::-webkit-slider-thumb {
     width: 1rem;
     height: 1rem;
     margin-top: -.25rem;
     background-color: #006ae5;
     border: 0;
     border-radius: 1rem;
-    --webkit-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -webkit-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    --webkit-appearance: none;
+    -webkit-appearance: none;
     appearance: none
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .custom-range::--webkit-slider-thumb {
-        --webkit-transition: none;
+    .custom-range::-webkit-slider-thumb {
+        -webkit-transition: none;
         transition: none
     }
 }
 
-.custom-range::--webkit-slider-thumb:active {
+.custom-range::-webkit-slider-thumb:active {
     background-color: #eaf1ff
 }
 
-.custom-range::--webkit-slider-runnable-track {
+.custom-range::-webkit-slider-runnable-track {
     width: 100%;
     height: .5rem;
     color: transparent;
@@ -4278,30 +4278,30 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     border-radius: 1rem
 }
 
-.custom-range::--moz-range-thumb {
+.custom-range::-moz-range-thumb {
     width: 1rem;
     height: 1rem;
     background-color: #006ae5;
     border: 0;
     border-radius: 1rem;
-    --moz-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -moz-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    --moz-appearance: none;
+    -moz-appearance: none;
     appearance: none
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .custom-range::--moz-range-thumb {
-        --moz-transition: none;
+    .custom-range::-moz-range-thumb {
+        -moz-transition: none;
         transition: none
     }
 }
 
-.custom-range::--moz-range-thumb:active {
+.custom-range::-moz-range-thumb:active {
     background-color: #eaf1ff
 }
 
-.custom-range::--moz-range-track {
+.custom-range::-moz-range-track {
     width: 100%;
     height: .5rem;
     color: transparent;
@@ -4357,19 +4357,19 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     border-radius: 1rem
 }
 
-.custom-range:disabled::--webkit-slider-thumb {
+.custom-range:disabled::-webkit-slider-thumb {
     background-color: #97a4af
 }
 
-.custom-range:disabled::--webkit-slider-runnable-track {
+.custom-range:disabled::-webkit-slider-runnable-track {
     cursor: default
 }
 
-.custom-range:disabled::--moz-range-thumb {
+.custom-range:disabled::-moz-range-thumb {
     background-color: #97a4af
 }
 
-.custom-range:disabled::--moz-range-track {
+.custom-range:disabled::-moz-range-track {
     cursor: default
 }
 
@@ -5143,11 +5143,11 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 
 @media (min-width: 576px) {
     .card-columns {
-        --webkit-column-count: 3;
-        --moz-column-count: 3;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
         column-count: 3;
-        --webkit-column-gap: 1.25rem;
-        --moz-column-gap: 1.25rem;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
         column-gap: 1.25rem;
         orphans: 1;
         widows: 1
@@ -5688,13 +5688,13 @@ a.badge-dark.focus, a.badge-dark:focus {
 }
 
 .progress-bar-animated {
-    --webkit-animation: progress-bar-stripes 1s linear infinite;
+    -webkit-animation: progress-bar-stripes 1s linear infinite;
     animation: progress-bar-stripes 1s linear infinite
 }
 
 @media (prefers-reduced-motion: reduce) {
     .progress-bar-animated {
-        --webkit-animation: none;
+        -webkit-animation: none;
         animation: none
     }
 }
@@ -6209,10 +6209,10 @@ a.close.disabled {
 }
 
 .modal.fade .modal-dialog {
-    transition: --webkit-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
     transition: transform .3s ease-out;
-    transition: transform .3s ease-out, --webkit-transform .3s ease-out;
-    --webkit-transform: translate(0, -50px);
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    -webkit-transform: translate(0, -50px);
     transform: translate(0, -50px)
 }
 
@@ -6223,12 +6223,12 @@ a.close.disabled {
 }
 
 .modal.show .modal-dialog {
-    --webkit-transform: none;
+    -webkit-transform: none;
     transform: none
 }
 
 .modal.modal-static .modal-dialog {
-    --webkit-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
     transform: scale(1.02)
 }
 
@@ -6263,8 +6263,8 @@ a.close.disabled {
 .modal-dialog-centered::before {
     display: block;
     height: calc(100vh - 1rem);
-    height: --webkit-min-content;
-    height: --moz-min-content;
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
     content: ""
 }
@@ -6395,8 +6395,8 @@ a.close.disabled {
 
     .modal-dialog-centered::before {
         height: calc(100vh - 3.5rem);
-        height: --webkit-min-content;
-        height: --moz-min-content;
+        height: -webkit-min-content;
+        height: -moz-min-content;
         height: min-content
     }
 
@@ -6717,11 +6717,11 @@ a.close.disabled {
     float: left;
     width: 100%;
     margin-inline-end: -100%;
-    --webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition: --webkit-transform .6s ease-in-out;
+    transition: -webkit-transform .6s ease-in-out;
     transition: transform .6s ease-in-out;
-    transition: transform .6s ease-in-out, --webkit-transform .6s ease-in-out
+    transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -6735,19 +6735,19 @@ a.close.disabled {
 }
 
 .active.carousel-item-right, .carousel-item-next:not(.carousel-item-left) {
-    --webkit-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
     transform: translateX(100%)
 }
 
 .active.carousel-item-left, .carousel-item-prev:not(.carousel-item-right) {
-    --webkit-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%)
 }
 
 .carousel-fade .carousel-item {
     opacity: 0;
     transition-property: opacity;
-    --webkit-transform: none;
+    -webkit-transform: none;
     transform: none
 }
 
@@ -6880,14 +6880,14 @@ a.close.disabled {
 
 @-webkit-keyframes spinner-border {
     to {
-        --webkit-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
     }
 }
 
 @keyframes spinner-border {
     to {
-        --webkit-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
     }
 }
@@ -6900,7 +6900,7 @@ a.close.disabled {
     border: .25em solid currentColor;
     border-inline-end-color: transparent;
     border-radius: 50%;
-    --webkit-animation: spinner-border .75s linear infinite;
+    -webkit-animation: spinner-border .75s linear infinite;
     animation: spinner-border .75s linear infinite
 }
 
@@ -6912,24 +6912,24 @@ a.close.disabled {
 
 @-webkit-keyframes spinner-grow {
     0% {
-        --webkit-transform: scale(0);
+        -webkit-transform: scale(0);
         transform: scale(0)
     }
     50% {
         opacity: 1;
-        --webkit-transform: none;
+        -webkit-transform: none;
         transform: none
     }
 }
 
 @keyframes spinner-grow {
     0% {
-        --webkit-transform: scale(0);
+        -webkit-transform: scale(0);
         transform: scale(0)
     }
     50% {
         opacity: 1;
-        --webkit-transform: none;
+        -webkit-transform: none;
         transform: none
     }
 }
@@ -6942,7 +6942,7 @@ a.close.disabled {
     background-color: currentColor;
     border-radius: 50%;
     opacity: 0;
-    --webkit-animation: spinner-grow .75s linear infinite;
+    -webkit-animation: spinner-grow .75s linear infinite;
     animation: spinner-grow .75s linear infinite
 }
 
@@ -8603,22 +8603,22 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .user-select-all {
-    --webkit-user-select: all !important;
-    --moz-user-select: all !important;
+    -webkit-user-select: all !important;
+    -moz-user-select: all !important;
     -ms-user-select: all !important;
     user-select: all !important
 }
 
 .user-select-auto {
-    --webkit-user-select: auto !important;
-    --moz-user-select: auto !important;
+    -webkit-user-select: auto !important;
+    -moz-user-select: auto !important;
     -ms-user-select: auto !important;
     user-select: auto !important
 }
 
 .user-select-none {
-    --webkit-user-select: none !important;
-    --moz-user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
     -ms-user-select: none !important;
     user-select: none !important
 }
@@ -8648,7 +8648,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .position-sticky {
-    position: --webkit-sticky !important;
+    position: -webkit-sticky !important;
     position: sticky !important
 }
 
@@ -8668,9 +8668,9 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
     z-index: 1030
 }
 
-@supports ((position:--webkit-sticky) or (position:sticky)) {
+@supports ((position:-webkit-sticky) or (position:sticky)) {
     .sticky-top {
-        position: --webkit-sticky;
+        position: -webkit-sticky;
         position: sticky;
         top: 0;
         z-index: 1020
@@ -13327,16 +13327,16 @@ dd {
     margin-bottom: .75rem
 }
 
-input::--webkit-inner-spin-button, input::--webkit-outer-spin-button {
-    --webkit-appearance: none;
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
     margin: 0
 }
 
 input[type=number] {
-    ---moz-appearance: textfield
+    --moz-appearance: textfield
 }
 
-::--moz-selection {
+::-moz-selection {
     color: #fff;
     background-color: #006ae5
 }
@@ -13346,7 +13346,7 @@ input[type=number] {
     background-color: #006ae5
 }
 
-.bg-primary ::--moz-selection {
+.bg-primary ::-moz-selection {
     color: #006ae5;
     background-color: #fff
 }
@@ -13614,9 +13614,9 @@ input[type=number] {
 }
 
 .animated {
-    --webkit-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    --webkit-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
     animation-fill-mode: both
 }
 
@@ -13639,19 +13639,19 @@ input[type=number] {
 }
 
 .fadeIn {
-    --webkit-animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
     animation-name: fadeIn
 }
 
 @-webkit-keyframes fadeInUp {
     from {
         opacity: 0;
-        --webkit-transform: translate3d(0, 15px, 0);
+        -webkit-transform: translate3d(0, 15px, 0);
         transform: translate3d(0, 15px, 0)
     }
     to {
         opacity: 1;
-        --webkit-transform: none;
+        -webkit-transform: none;
         transform: none
     }
 }
@@ -13659,18 +13659,18 @@ input[type=number] {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        --webkit-transform: translate3d(0, 15px, 0);
+        -webkit-transform: translate3d(0, 15px, 0);
         transform: translate3d(0, 15px, 0)
     }
     to {
         opacity: 1;
-        --webkit-transform: none;
+        -webkit-transform: none;
         transform: none
     }
 }
 
 .fadeInUp {
-    --webkit-animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp
 }
 
@@ -13693,7 +13693,7 @@ input[type=number] {
 }
 
 .fadeOut {
-    --webkit-animation-name: fadeOut;
+    -webkit-animation-name: fadeOut;
     animation-name: fadeOut
 }
 
@@ -13703,7 +13703,7 @@ input[type=number] {
     }
     to {
         opacity: 0;
-        --webkit-transform: translate3d(0, -100%, 0);
+        -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0)
     }
 }
@@ -13714,13 +13714,13 @@ input[type=number] {
     }
     to {
         opacity: 0;
-        --webkit-transform: translate3d(0, -100%, 0);
+        -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0)
     }
 }
 
 .fadeOutUp {
-    --webkit-animation-name: fadeOutUp;
+    -webkit-animation-name: fadeOutUp;
     animation-name: fadeOutUp
 }
 
@@ -13730,7 +13730,7 @@ input[type=number] {
     }
     to {
         opacity: 0;
-        --webkit-transform: translate3d(0, 100%, 0);
+        -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0)
     }
 }
@@ -13741,83 +13741,83 @@ input[type=number] {
     }
     to {
         opacity: 0;
-        --webkit-transform: translate3d(0, 100%, 0);
+        -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0)
     }
 }
 
 .fadeOutDown {
-    --webkit-animation-name: fadeOutDown;
+    -webkit-animation-name: fadeOutDown;
     animation-name: fadeOutDown
 }
 
 @-webkit-keyframes slideInUp {
     from {
-        --webkit-transform: translate3d(0, 10px, 0);
+        -webkit-transform: translate3d(0, 10px, 0);
         transform: translate3d(0, 10px, 0);
         visibility: visible
     }
     to {
-        --webkit-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0)
     }
 }
 
 @keyframes slideInUp {
     from {
-        --webkit-transform: translate3d(0, 10px, 0);
+        -webkit-transform: translate3d(0, 10px, 0);
         transform: translate3d(0, 10px, 0);
         visibility: visible
     }
     to {
-        --webkit-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0)
     }
 }
 
 .slideInUp {
-    --webkit-animation-name: slideInUp;
+    -webkit-animation-name: slideInUp;
     animation-name: slideInUp
 }
 
 @-webkit-keyframes slideInDown {
     from {
-        --webkit-transform: translate3d(0, -10px, 0);
+        -webkit-transform: translate3d(0, -10px, 0);
         transform: translate3d(0, -10px, 0);
         visibility: visible
     }
     to {
-        --webkit-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0)
     }
 }
 
 @keyframes slideInDown {
     from {
-        --webkit-transform: translate3d(0, -10px, 0);
+        -webkit-transform: translate3d(0, -10px, 0);
         transform: translate3d(0, -10px, 0);
         visibility: visible
     }
     to {
-        --webkit-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0)
     }
 }
 
 .slideInDown {
-    --webkit-animation-name: slideInDown;
+    -webkit-animation-name: slideInDown;
     animation-name: slideInDown
 }
 
 @-webkit-keyframes fadeInLeft {
     from {
         opacity: 0;
-        --webkit-transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0)
     }
     to {
         opacity: 1;
-        --webkit-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0)
     }
 }
@@ -13825,30 +13825,30 @@ input[type=number] {
 @keyframes fadeInLeft {
     from {
         opacity: 0;
-        --webkit-transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0)
     }
     to {
         opacity: 1;
-        --webkit-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0)
     }
 }
 
 .fadeInLeft {
-    --webkit-animation-name: fadeInLeft;
+    -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft
 }
 
 @-webkit-keyframes fadeInRight {
     from {
         opacity: 0;
-        --webkit-transform: translate3d(100%, 0, 0);
+        -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0)
     }
     to {
         opacity: 1;
-        --webkit-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0)
     }
 }
@@ -13856,18 +13856,18 @@ input[type=number] {
 @keyframes fadeInRight {
     from {
         opacity: 0;
-        --webkit-transform: translate3d(100%, 0, 0);
+        -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0)
     }
     to {
         opacity: 1;
-        --webkit-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0)
     }
 }
 
 .fadeInRight {
-    --webkit-animation-name: fadeInRight;
+    -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight
 }
 
@@ -13877,7 +13877,7 @@ input[type=number] {
     }
     to {
         opacity: 0;
-        --webkit-transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0)
     }
 }
@@ -13888,13 +13888,13 @@ input[type=number] {
     }
     to {
         opacity: 0;
-        --webkit-transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0)
     }
 }
 
 .fadeOutLeft {
-    --webkit-animation-name: fadeOutLeft;
+    -webkit-animation-name: fadeOutLeft;
     animation-name: fadeOutLeft
 }
 
@@ -13904,7 +13904,7 @@ input[type=number] {
     }
     to {
         opacity: 0;
-        --webkit-transform: translate3d(100%, 0, 0);
+        -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0)
     }
 }
@@ -13915,13 +13915,13 @@ input[type=number] {
     }
     to {
         opacity: 0;
-        --webkit-transform: translate3d(100%, 0, 0);
+        -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0)
     }
 }
 
 .fadeOutRight {
-    --webkit-animation-name: fadeOutRight;
+    -webkit-animation-name: fadeOutRight;
     animation-name: fadeOutRight
 }
 
@@ -14187,7 +14187,7 @@ input[type=number] {
     height: 0
 }
 
-.navbar-input-group input[type=search]::--webkit-search-cancel-button, .navbar-input-group input[type=search]::--webkit-search-decoration, .navbar-input-group input[type=search]::--webkit-search-results-button, .navbar-input-group input[type=search]::--webkit-search-results-decoration {
+.navbar-input-group input[type=search]::-webkit-search-cancel-button, .navbar-input-group input[type=search]::-webkit-search-decoration, .navbar-input-group input[type=search]::-webkit-search-results-button, .navbar-input-group input[type=search]::-webkit-search-results-decoration {
     display: none
 }
 
@@ -14617,16 +14617,16 @@ input[type=number] {
         overflow-y: auto
     }
 
-    .navbar-expand-sm .navbar-body::--webkit-scrollbar {
+    .navbar-expand-sm .navbar-body::-webkit-scrollbar {
         width: .6125rem
     }
 
-    .navbar-expand-sm .navbar-body::--webkit-scrollbar-thumb {
+    .navbar-expand-sm .navbar-body::-webkit-scrollbar-thumb {
         background-color: rgba(189, 197, 209, .6);
         visibility: hidden
     }
 
-    .navbar-expand-sm .navbar-body:hover::--webkit-scrollbar-thumb {
+    .navbar-expand-sm .navbar-body:hover::-webkit-scrollbar-thumb {
         visibility: visible
     }
 
@@ -14656,27 +14656,27 @@ input[type=number] {
     }
 
     .navbar-expand-sm .hs-mega-menu-opened .nav-link-toggle::after, .navbar-expand-sm .hs-sub-menu-opened .nav-link-toggle::after {
-        --webkit-transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
         transform: rotate(-180deg)
     }
 
     .navbar-expand-sm .dropdown-item-toggle::after, .navbar-expand-sm .navbar-dropdown-submenu-item-invoker::after {
-        --webkit-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
         transform: rotate(90deg)
     }
 
     .navbar-expand-sm .hs-sub-menu-opened > .dropdown-item-toggle::after {
-        --webkit-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg)
     }
 
     .navbar-expand-sm .navbar-dropdown-submenu-item-invoker {
-        --webkit-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
         transform: rotate(90deg)
     }
 
     .navbar-expand-sm .navbar-dropdown-submenu-item.hs-active .navbar-dropdown-submenu-item-invoker {
-        --webkit-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg)
     }
 
@@ -14769,16 +14769,16 @@ input[type=number] {
         overflow-y: auto
     }
 
-    .navbar-expand-md .navbar-body::--webkit-scrollbar {
+    .navbar-expand-md .navbar-body::-webkit-scrollbar {
         width: .6125rem
     }
 
-    .navbar-expand-md .navbar-body::--webkit-scrollbar-thumb {
+    .navbar-expand-md .navbar-body::-webkit-scrollbar-thumb {
         background-color: rgba(189, 197, 209, .6);
         visibility: hidden
     }
 
-    .navbar-expand-md .navbar-body:hover::--webkit-scrollbar-thumb {
+    .navbar-expand-md .navbar-body:hover::-webkit-scrollbar-thumb {
         visibility: visible
     }
 
@@ -14808,27 +14808,27 @@ input[type=number] {
     }
 
     .navbar-expand-md .hs-mega-menu-opened .nav-link-toggle::after, .navbar-expand-md .hs-sub-menu-opened .nav-link-toggle::after {
-        --webkit-transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
         transform: rotate(-180deg)
     }
 
     .navbar-expand-md .dropdown-item-toggle::after, .navbar-expand-md .navbar-dropdown-submenu-item-invoker::after {
-        --webkit-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
         transform: rotate(90deg)
     }
 
     .navbar-expand-md .hs-sub-menu-opened > .dropdown-item-toggle::after {
-        --webkit-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg)
     }
 
     .navbar-expand-md .navbar-dropdown-submenu-item-invoker {
-        --webkit-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
         transform: rotate(90deg)
     }
 
     .navbar-expand-md .navbar-dropdown-submenu-item.hs-active .navbar-dropdown-submenu-item-invoker {
-        --webkit-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg)
     }
 
@@ -14921,16 +14921,16 @@ input[type=number] {
         overflow-y: auto
     }
 
-    .navbar-expand-lg .navbar-body::--webkit-scrollbar {
+    .navbar-expand-lg .navbar-body::-webkit-scrollbar {
         width: .6125rem
     }
 
-    .navbar-expand-lg .navbar-body::--webkit-scrollbar-thumb {
+    .navbar-expand-lg .navbar-body::-webkit-scrollbar-thumb {
         background-color: rgba(189, 197, 209, .6);
         visibility: hidden
     }
 
-    .navbar-expand-lg .navbar-body:hover::--webkit-scrollbar-thumb {
+    .navbar-expand-lg .navbar-body:hover::-webkit-scrollbar-thumb {
         visibility: visible
     }
 
@@ -14960,27 +14960,27 @@ input[type=number] {
     }
 
     .navbar-expand-lg .hs-mega-menu-opened .nav-link-toggle::after, .navbar-expand-lg .hs-sub-menu-opened .nav-link-toggle::after {
-        --webkit-transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
         transform: rotate(-180deg)
     }
 
     .navbar-expand-lg .dropdown-item-toggle::after, .navbar-expand-lg .navbar-dropdown-submenu-item-invoker::after {
-        --webkit-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
         transform: rotate(90deg)
     }
 
     .navbar-expand-lg .hs-sub-menu-opened > .dropdown-item-toggle::after {
-        --webkit-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg)
     }
 
     .navbar-expand-lg .navbar-dropdown-submenu-item-invoker {
-        --webkit-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
         transform: rotate(90deg)
     }
 
     .navbar-expand-lg .navbar-dropdown-submenu-item.hs-active .navbar-dropdown-submenu-item-invoker {
-        --webkit-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg)
     }
 
@@ -15073,16 +15073,16 @@ input[type=number] {
         overflow-y: auto
     }
 
-    .navbar-expand-xl .navbar-body::--webkit-scrollbar {
+    .navbar-expand-xl .navbar-body::-webkit-scrollbar {
         width: .6125rem
     }
 
-    .navbar-expand-xl .navbar-body::--webkit-scrollbar-thumb {
+    .navbar-expand-xl .navbar-body::-webkit-scrollbar-thumb {
         background-color: rgba(189, 197, 209, .6);
         visibility: hidden
     }
 
-    .navbar-expand-xl .navbar-body:hover::--webkit-scrollbar-thumb {
+    .navbar-expand-xl .navbar-body:hover::-webkit-scrollbar-thumb {
         visibility: visible
     }
 
@@ -15112,27 +15112,27 @@ input[type=number] {
     }
 
     .navbar-expand-xl .hs-mega-menu-opened .nav-link-toggle::after, .navbar-expand-xl .hs-sub-menu-opened .nav-link-toggle::after {
-        --webkit-transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
         transform: rotate(-180deg)
     }
 
     .navbar-expand-xl .dropdown-item-toggle::after, .navbar-expand-xl .navbar-dropdown-submenu-item-invoker::after {
-        --webkit-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
         transform: rotate(90deg)
     }
 
     .navbar-expand-xl .hs-sub-menu-opened > .dropdown-item-toggle::after {
-        --webkit-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg)
     }
 
     .navbar-expand-xl .navbar-dropdown-submenu-item-invoker {
-        --webkit-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
         transform: rotate(90deg)
     }
 
     .navbar-expand-xl .navbar-dropdown-submenu-item.hs-active .navbar-dropdown-submenu-item-invoker {
-        --webkit-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg)
     }
 
@@ -15225,16 +15225,16 @@ input[type=number] {
         overflow-y: auto
     }
 
-    .navbar-expand-xxl .navbar-body::--webkit-scrollbar {
+    .navbar-expand-xxl .navbar-body::-webkit-scrollbar {
         width: .6125rem
     }
 
-    .navbar-expand-xxl .navbar-body::--webkit-scrollbar-thumb {
+    .navbar-expand-xxl .navbar-body::-webkit-scrollbar-thumb {
         background-color: rgba(189, 197, 209, .6);
         visibility: hidden
     }
 
-    .navbar-expand-xxl .navbar-body:hover::--webkit-scrollbar-thumb {
+    .navbar-expand-xxl .navbar-body:hover::-webkit-scrollbar-thumb {
         visibility: visible
     }
 
@@ -15264,27 +15264,27 @@ input[type=number] {
     }
 
     .navbar-expand-xxl .hs-mega-menu-opened .nav-link-toggle::after, .navbar-expand-xxl .hs-sub-menu-opened .nav-link-toggle::after {
-        --webkit-transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
         transform: rotate(-180deg)
     }
 
     .navbar-expand-xxl .dropdown-item-toggle::after, .navbar-expand-xxl .navbar-dropdown-submenu-item-invoker::after {
-        --webkit-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
         transform: rotate(90deg)
     }
 
     .navbar-expand-xxl .hs-sub-menu-opened > .dropdown-item-toggle::after {
-        --webkit-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg)
     }
 
     .navbar-expand-xxl .navbar-dropdown-submenu-item-invoker {
-        --webkit-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
         transform: rotate(90deg)
     }
 
     .navbar-expand-xxl .navbar-dropdown-submenu-item.hs-active .navbar-dropdown-submenu-item-invoker {
-        --webkit-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg)
     }
 
@@ -15376,16 +15376,16 @@ input[type=number] {
     overflow-y: auto
 }
 
-.navbar-expand .navbar-body::--webkit-scrollbar {
+.navbar-expand .navbar-body::-webkit-scrollbar {
     width: .6125rem
 }
 
-.navbar-expand .navbar-body::--webkit-scrollbar-thumb {
+.navbar-expand .navbar-body::-webkit-scrollbar-thumb {
     background-color: rgba(189, 197, 209, .6);
     visibility: hidden
 }
 
-.navbar-expand .navbar-body:hover::--webkit-scrollbar-thumb {
+.navbar-expand .navbar-body:hover::-webkit-scrollbar-thumb {
     visibility: visible
 }
 
@@ -15415,27 +15415,27 @@ input[type=number] {
 }
 
 .navbar-expand .hs-mega-menu-opened .nav-link-toggle::after, .navbar-expand .hs-sub-menu-opened .nav-link-toggle::after {
-    --webkit-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg)
 }
 
 .navbar-expand .dropdown-item-toggle::after, .navbar-expand .navbar-dropdown-submenu-item-invoker::after {
-    --webkit-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg)
 }
 
 .navbar-expand .hs-sub-menu-opened > .dropdown-item-toggle::after {
-    --webkit-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg)
 }
 
 .navbar-expand .navbar-dropdown-submenu-item-invoker {
-    --webkit-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg)
 }
 
 .navbar-expand .navbar-dropdown-submenu-item.hs-active .navbar-dropdown-submenu-item-invoker {
-    --webkit-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg)
 }
 
@@ -15863,7 +15863,7 @@ input[type=number] {
 }
 
 .navbar-vertical .nav-link-toggle[aria-expanded=true]::after {
-    --webkit-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg)
 }
 
@@ -16084,11 +16084,11 @@ input[type=number] {
     overflow-y: auto
 }
 
-.navbar-vertical-content::--webkit-scrollbar {
+.navbar-vertical-content::-webkit-scrollbar {
     width: 6px
 }
 
-.navbar-vertical-content::--webkit-scrollbar-thumb {
+.navbar-vertical-content::-webkit-scrollbar-thumb {
     background-color: rgba(189, 197, 209, .6)
 }
 
@@ -16184,7 +16184,7 @@ input[type=number] {
     background-color: #bdc5d1;
     opacity: 0;
     border-radius: 50%;
-    --webkit-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     transition: opacity .3s
 }
@@ -16221,7 +16221,7 @@ input[type=number] {
 }
 
 .navbar-vertical-aside-has-menu.show > .nav-link-toggle::after {
-    --webkit-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg)
 }
 
@@ -16328,11 +16328,11 @@ input[type=number] {
     position: static
 }
 
-.navbar-vertical-aside-compact-mini-mode .navbar-vertical-container::--webkit-scrollbar, .navbar-vertical-aside-mini-mode .navbar-vertical-container::--webkit-scrollbar {
+.navbar-vertical-aside-compact-mini-mode .navbar-vertical-container::-webkit-scrollbar, .navbar-vertical-aside-mini-mode .navbar-vertical-container::-webkit-scrollbar {
     width: .6125rem
 }
 
-.navbar-vertical-aside-compact-mini-mode .navbar-vertical-container::--webkit-scrollbar-thumb, .navbar-vertical-aside-mini-mode .navbar-vertical-container::--webkit-scrollbar-thumb {
+.navbar-vertical-aside-compact-mini-mode .navbar-vertical-container::-webkit-scrollbar-thumb, .navbar-vertical-aside-mini-mode .navbar-vertical-container::-webkit-scrollbar-thumb {
     background-color: rgba(189, 197, 209, .6)
 }
 
@@ -16342,12 +16342,12 @@ input[type=number] {
 
 .navbar-vertical-aside-compact-mini-mode .navbar-vertical-aside-has-menu .navbar-vertical-aside-has-menu > .nav-link-toggle::after, .navbar-vertical-aside-mini-mode .navbar-vertical-aside-has-menu .navbar-vertical-aside-has-menu > .nav-link-toggle::after {
     display: inline-block;
-    --webkit-transform: rotate(0);
+    -webkit-transform: rotate(0);
     transform: rotate(0)
 }
 
 .navbar-vertical-aside-compact-mini-mode .navbar-vertical-aside-has-menu.show .navbar-vertical-aside-has-menu.show > .nav-link-toggle::after, .navbar-vertical-aside-mini-mode .navbar-vertical-aside-has-menu.show .navbar-vertical-aside-has-menu.show > .nav-link-toggle::after {
-    --webkit-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg)
 }
 
@@ -19382,14 +19382,14 @@ label.btn {
 
 .kanban-board {
     overflow-x: auto;
-    --webkit-overflow-scrolling: touch
+    -webkit-overflow-scrolling: touch
 }
 
-.kanban-board::--webkit-scrollbar {
+.kanban-board::-webkit-scrollbar {
     height: .6125rem
 }
 
-.kanban-board::--webkit-scrollbar-thumb {
+.kanban-board::-webkit-scrollbar-thumb {
     background-color: rgba(189, 197, 209, .6)
 }
 
@@ -19652,11 +19652,11 @@ label.btn {
     overflow-y: auto
 }
 
-.card-body-height::--webkit-scrollbar {
+.card-body-height::-webkit-scrollbar {
     width: .6125rem
 }
 
-.card-body-height::--webkit-scrollbar-thumb {
+.card-body-height::-webkit-scrollbar-thumb {
     background-color: rgba(189, 197, 209, .6)
 }
 
@@ -20300,16 +20300,16 @@ label.btn {
     overflow-y: auto
 }
 
-.sidebar-scrollbar::--webkit-scrollbar {
+.sidebar-scrollbar::-webkit-scrollbar {
     width: .6125rem
 }
 
-.sidebar-scrollbar::--webkit-scrollbar-thumb {
+.sidebar-scrollbar::-webkit-scrollbar-thumb {
     background-color: rgba(189, 197, 209, .6);
     visibility: hidden
 }
 
-.sidebar-scrollbar:hover::--webkit-scrollbar-thumb {
+.sidebar-scrollbar:hover::-webkit-scrollbar-thumb {
     visibility: visible
 }
 
@@ -20480,17 +20480,17 @@ label.btn {
 }
 
 .dropup .dropdown-toggle::after {
-    --webkit-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg)
 }
 
 .dropright .dropdown-toggle::after {
-    --webkit-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg)
 }
 
 .dropleft .dropdown-toggle::after {
-    --webkit-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg)
 }
 
@@ -20499,7 +20499,7 @@ label.btn {
 }
 
 .dropdown-toggle-collapse[aria-expanded=true]::after {
-    --webkit-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg)
 }
 
@@ -21145,7 +21145,7 @@ label.btn {
     position: absolute;
     top: 50%;
     inset-inline-end: .5rem;
-    --webkit-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%)
 }
 
@@ -21652,11 +21652,11 @@ label.btn {
     width: 1.5rem;
     height: 1.5rem;
     background-color: #fff;
-    --webkit-transform: initial;
+    -webkit-transform: initial;
     transform: initial;
     box-shadow: 0 3px 6px 0 rgba(140, 152, 164, .25);
     border-radius: 50%;
-    --webkit-transform: translate3d(0, 50%, 0);
+    -webkit-transform: translate3d(0, 50%, 0);
     transform: translate3d(0, 50%, 0);
     transition: .3s
 }
@@ -21666,7 +21666,7 @@ label.btn {
 }
 
 .toggle-switch-input:checked + .toggle-switch-label .toggle-switch-indicator {
-    --webkit-transform: translate3d(1.025rem, 50%, 0);
+    -webkit-transform: translate3d(1.025rem, 50%, 0);
     transform: translate3d(1.025rem, 50%, 0)
 }
 
@@ -21697,7 +21697,7 @@ label.btn {
 }
 
 .toggle-switch-sm .toggle-switch-input:checked + .toggle-switch-label .toggle-switch-indicator {
-    --webkit-transform: translate3d(.81094rem, 50%, 0);
+    -webkit-transform: translate3d(.81094rem, 50%, 0);
     transform: translate3d(.81094rem, 50%, 0)
 }
 
@@ -23776,7 +23776,7 @@ label.btn {
 .content-centered-x {
     position: absolute;
     inset-inline-start: 50%;
-    --webkit-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0)
 }
 
@@ -24652,11 +24652,11 @@ a:hover .text-hover-primary {
 
 .hs-chartjs-tooltip-left::before {
     top: 50%;
-    --webkit-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     inset-inline-end: -.6875rem;
     inset-inline-start: auto;
-    --webkit-transform: translateY(-50%) rotate(270deg);
+    -webkit-transform: translateY(-50%) rotate(270deg);
     transform: translateY(-50%) rotate(270deg)
 }
 
@@ -24666,11 +24666,11 @@ a:hover .text-hover-primary {
 
 .hs-chartjs-tooltip-right::before {
     top: 50%;
-    --webkit-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     inset-inline-start: -.6875rem;
     inset-inline-end: auto;
-    --webkit-transform: translateY(-50%) rotate(90deg);
+    -webkit-transform: translateY(-50%) rotate(90deg);
     transform: translateY(-50%) rotate(90deg)
 }
 
@@ -24692,7 +24692,7 @@ a:hover .text-hover-primary {
     position: absolute;
     top: 8rem;
     inset-inline-start: 50%;
-    --webkit-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%)
 }
 
@@ -24730,7 +24730,7 @@ a:hover .text-hover-primary {
     z-index: 1;
     position: absolute;
     top: 50%;
-    --webkit-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%)
 }
 
@@ -24754,7 +24754,7 @@ a:hover .text-hover-primary {
     background: url("data:image/svg+xml,%3Csvg width='0.7rem' height='0.7rem' viewBox='0 0 292 375' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M131.965 15.3808C139.5 7.12345 152.5 7.12346 160.035 15.3808L262.976 128.193C274.106 140.39 265.453 160 248.941 160H43.0589C26.5474 160 17.8943 140.39 29.0238 128.193L131.965 15.3808Z' fill='%23dde1ee'/%3E%3Cpath d='M160.035 359.619C152.5 367.877 139.5 367.877 131.965 359.619L29.0238 246.807C17.8942 234.61 26.5473 215 43.0589 215L248.941 215C265.453 215 274.106 234.61 262.976 246.807L160.035 359.619Z' fill='%23dde1ee'/%3E%3C/svg%3E%0A");
     content: "";
     margin-inline-start: .5rem;
-    --webkit-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%)
 }
 
@@ -24793,7 +24793,7 @@ a:hover .text-hover-primary {
     background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='%23677788' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19,11.5v1a.5.5,0,0,1-.5.5H13v5.5a.5.5,0,0,1-.5.5h-1a.5.5,0,0,1-.5-.5V13H5.5a.5.5,0,0,1-.5-.5v-1a.5.5,0,0,1,.5-.5H11V5.5a.5.5,0,0,1,.5-.5h1a.5.5,0,0,1,.5.5V11h5.5A.5.5,0,0,1,19,11.5Z'/%3E%3C/svg%3E") no-repeat right center/1rem 1rem;
     content: "";
     cursor: pointer;
-    --webkit-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
 }
 
@@ -25122,7 +25122,7 @@ a:hover .text-hover-primary {
 }
 
 .fancybox-blur aside, .fancybox-blur footer, .fancybox-blur header, .fancybox-blur main {
-    --webkit-filter: blur(30px);
+    -webkit-filter: blur(30px);
     filter: blur(30px)
 }
 
@@ -25503,7 +25503,7 @@ a:hover .text-hover-primary {
 }
 
 .flatpickr-calendar.animate.open {
-    --webkit-animation: fadeInUp .3s cubic-bezier(.23, 1, .32, 1);
+    -webkit-animation: fadeInUp .3s cubic-bezier(.23, 1, .32, 1);
     animation: fadeInUp .3s cubic-bezier(.23, 1, .32, 1)
 }
 
@@ -25781,7 +25781,7 @@ a:hover .text-hover-primary {
     white-space: nowrap
 }
 
-.hs-nav-scroller-horizontal .nav::--webkit-scrollbar {
+.hs-nav-scroller-horizontal .nav::-webkit-scrollbar {
     display: none
 }
 
@@ -25856,11 +25856,11 @@ a:hover .text-hover-primary {
     overflow-y: auto
 }
 
-.hs-nav-scroller-vertical::--webkit-scrollbar {
+.hs-nav-scroller-vertical::-webkit-scrollbar {
     width: .6125rem
 }
 
-.hs-nav-scroller-vertical::--webkit-scrollbar-thumb {
+.hs-nav-scroller-vertical::-webkit-scrollbar-thumb {
     background-color: rgba(189, 197, 209, .6)
 }
 
@@ -25933,7 +25933,7 @@ a:hover .text-hover-primary {
 }
 
 .range-slider-custom .irs-handle.state_hover {
-    --webkit-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
     transform: scale(1.3)
 }
 
@@ -26236,7 +26236,7 @@ a:hover .text-hover-primary {
     box-shadow: 0 10px 40px 10px rgba(140, 152, 164, .175);
     padding: 1.5rem 1.5rem;
     border-radius: .3125rem;
-    --webkit-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
 }
 
@@ -26422,11 +26422,11 @@ a:hover .text-hover-primary {
     width: 100% !important
 }
 
-.select2-container--default .select2-search__field::--webkit-input-placeholder {
+.select2-container--default .select2-search__field::-webkit-input-placeholder {
     color: #97a4af
 }
 
-.select2-container--default .select2-search__field::--moz-placeholder {
+.select2-container--default .select2-search__field::-moz-placeholder {
     color: #97a4af
 }
 
@@ -26449,11 +26449,11 @@ a:hover .text-hover-primary {
     border-radius: .3125rem
 }
 
-.select2-container--default .select2-search--dropdown .select2-search__field::--webkit-input-placeholder {
+.select2-container--default .select2-search--dropdown .select2-search__field::-webkit-input-placeholder {
     color: #97a4af
 }
 
-.select2-container--default .select2-search--dropdown .select2-search__field::--moz-placeholder {
+.select2-container--default .select2-search--dropdown .select2-search__field::-moz-placeholder {
     color: #97a4af
 }
 
@@ -26514,7 +26514,7 @@ a:hover .text-hover-primary {
     height: 1rem;
     background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 110 110' fill='%23377dff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M98.1,16.2c-2.5-2.3-6.4-2.2-8.7,0.2L36.7,70.1l-13-15.5c-2.9-3.5-7.9-4.1-11.1-1.4c-2.9,2.4-3.5,6.6-1.4,10.1l16.5,28c3.2,5.4,10.8,5.8,14.5,0.8l56.5-67.3C100.7,22.1,100.4,18.5,98.1,16.2z'/%3E%3C/svg%3E%0A") no-repeat right center/1rem 1rem;
     content: "";
-    --webkit-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%)
 }
 
@@ -26536,7 +26536,7 @@ a:hover .text-hover-primary {
     top: 50%;
     inset-inline-start: 0;
     padding-inline-start: .75rem;
-    --webkit-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%)
 }
 
@@ -26545,7 +26545,7 @@ a:hover .text-hover-primary {
 }
 
 .sortablejs-custom-rotate.sortable-fallback {
-    --webkit-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
     transform: rotate(10deg);
     opacity: 1 !important
 }

@@ -23,7 +23,7 @@
                                 </center>
                             </div>
                             @php($restaurant_logo=\App\Model\BusinessSetting::where(['key'=>'logo'])->first()?->value)
-                            <div class="qr-wrapper" style="background: url({{asset('public/assets/admin/img/qr-bg.png')}}) no-repeat scroll 0% 0% / 100% 100% !important; --webkit-print-color-adjust: exact !important; color-adjust: exact !important; print-color-adjust: exact !important; " id="printableArea">
+                            <div class="qr-wrapper" style="background: url({{asset('public/assets/admin/img/qr-bg.png')}}) no-repeat scroll 0% 0% / 100% 100% !important; -webkit-print-color-adjust: exact !important; color-adjust: exact !important; print-color-adjust: exact !important; " id="printableArea">
                                 <div class="d-flex justify-content-center py-3">
                                     <a href="" class="qr-logo">
                                         <img src="{{asset('storage/app/public/restaurant/'.$restaurant_logo)}}" class="mw-100"
