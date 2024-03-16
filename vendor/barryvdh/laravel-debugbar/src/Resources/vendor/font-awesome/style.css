@@ -15,8 +15,8 @@
   font: normal normal normal 14px/1 PhpDebugbarFontAwesome;
   font-size: inherit;
   text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing: grayscale;
 }
 /* makes the font 33% larger relative to the icon container */
 .phpdebugbar-fa-lg {
@@ -70,56 +70,56 @@
   margin-left: .3em;
 }
 .phpdebugbar-fa-spin {
-  -webkit-animation: phpdebugbar-fa-spin 2s infinite linear;
+  --webkit-animation: phpdebugbar-fa-spin 2s infinite linear;
   animation: phpdebugbar-fa-spin 2s infinite linear;
 }
 @-webkit-keyframes phpdebugbar-fa-spin {
   0% {
-    -webkit-transform: rotate(0deg);
+    --webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(359deg);
+    --webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
 @keyframes phpdebugbar-fa-spin {
   0% {
-    -webkit-transform: rotate(0deg);
+    --webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(359deg);
+    --webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
 .phpdebugbar-fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-  -webkit-transform: rotate(90deg);
+  --webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .phpdebugbar-fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  -webkit-transform: rotate(180deg);
+  --webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .phpdebugbar-fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  -webkit-transform: rotate(270deg);
+  --webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 .phpdebugbar-fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
-  -webkit-transform: scale(-1, 1);
+  --webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 .phpdebugbar-fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
-  -webkit-transform: scale(1, -1);
+  --webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }

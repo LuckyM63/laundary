@@ -720,7 +720,7 @@ pre.sf-dump .sf-dump-search-wrapper {
     white-space: nowrap;
     margin-bottom: 5px;
     display: flex;
-    position: -webkit-sticky;
+    position: --webkit-sticky;
     position: sticky;
     top: 5px;
 }

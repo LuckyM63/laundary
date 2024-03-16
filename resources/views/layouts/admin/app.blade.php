@@ -273,7 +273,7 @@
             type: 'warning',
             showCancelButton: true,
             cancelButtonColor: 'default',
-            confirmButtonColor: '#FC6A57',
+            confirmButtonColor: '#006ae5',
             cancelButtonText: '{{translate("No")}}',
             confirmButtonText:'{{translate("Yes")}}',
             reverseButtons: true
@@ -291,7 +291,7 @@
             type: 'warning',
             showCancelButton: true,
             cancelButtonColor: 'default',
-            confirmButtonColor: '#FC6A57',
+            confirmButtonColor: '#006ae5',
             cancelButtonText: '{{translate("No")}}',
             confirmButtonText: '{{translate("Yes")}}',
             reverseButtons: true
@@ -350,7 +350,7 @@
             text: 'Want to change status',
             type: 'warning',
             showCancelButton: true,
-            confirmButtonColor: '#FC6A57',
+            confirmButtonColor: '#006ae5',
             cancelButtonColor: 'default',
             cancelButtonText: '{{translate("No")}}',
             confirmButtonText: '{{translate("Yes")}}',

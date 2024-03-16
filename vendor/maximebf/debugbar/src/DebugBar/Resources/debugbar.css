@@ -51,7 +51,7 @@ div.phpdebugbar * {
   text-decoration: none;
   clear: initial;
   width: auto;
-  -moz-box-sizing: content-box;
+  --moz-box-sizing: content-box;
        box-sizing: content-box;
 }
 
@@ -166,10 +166,10 @@ a.phpdebugbar-tab.phpdebugbar-active {
   color: #444;
   background-image: linear-gradient(bottom, rgb(173,173,173) 41%, rgb(209,209,209) 71%);
   background-image: -o-linear-gradient(bottom, rgb(173,173,173) 41%, rgb(209,209,209) 71%);
-  background-image: -moz-linear-gradient(bottom, rgb(173,173,173) 41%, rgb(209,209,209) 71%);
-  background-image: -webkit-linear-gradient(bottom, rgb(173,173,173) 41%, rgb(209,209,209) 71%);
+  background-image: --moz-linear-gradient(bottom, rgb(173,173,173) 41%, rgb(209,209,209) 71%);
+  background-image: --webkit-linear-gradient(bottom, rgb(173,173,173) 41%, rgb(209,209,209) 71%);
   background-image: -ms-linear-gradient(bottom, rgb(173,173,173) 41%, rgb(209,209,209) 71%);
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.41, rgb(173,173,173)), color-stop(0.71, rgb(209,209,209)));
+  background-image: --webkit-gradient(linear, left bottom, left top, color-stop(0.41, rgb(173,173,173)), color-stop(0.71, rgb(209,209,209)));
 }
   a.phpdebugbar-tab span.phpdebugbar-badge {
     display: none;

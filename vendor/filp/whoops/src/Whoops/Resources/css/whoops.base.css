@@ -258,7 +258,7 @@ header {
       box-shadow: 0 3px 0 rgba(0, 0, 0, .05),
                   0 10px 30px rgba(0, 0, 0, .05),
                   inset 0 0 1px 0 rgba(255, 255, 255, .07);
-      -moz-tab-size: 4;
+      --moz-tab-size: 4;
       -o-tab-size: 4;
       tab-size: 4;
     }
@@ -354,8 +354,8 @@ header {
     -ms-word-break: break-all;
     word-break: break-all;
     word-break: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
+    --webkit-hyphens: auto;
+    --moz-hyphens: auto;
     hyphens: auto;
   }
 
@@ -397,10 +397,10 @@ header {
 
 /* inspired by githubs kbd styles */
 kbd {
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
+  --moz-border-bottom-colors: none;
+  --moz-border-left-colors: none;
+  --moz-border-right-colors: none;
+  --moz-border-top-colors: none;
   background-color: #fcfcfc;
   border-color: #ccc #ccc #bbb;
   border-image: none;
@@ -490,7 +490,7 @@ kbd {
   content: attr(aria-label);
   background: rgba(0, 0, 0, 0.8);
   border-radius: 3px;
-  -webkit-font-smoothing: subpixel-antialiased
+  --webkit-font-smoothing: subpixel-antialiased
 }
 .tooltipped:before {
   position: absolute;

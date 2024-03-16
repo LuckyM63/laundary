@@ -30,14 +30,14 @@ pre[class*="language-"] {
   word-break: normal;
   word-wrap: normal;
 
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
+  --webkit-hyphens: none;
+  --moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+pre[class*="language-"]::--moz-selection, pre[class*="language-"] ::--moz-selection,
+code[class*="language-"]::--moz-selection, code[class*="language-"] ::--moz-selection {
   text-shadow: none;
   background: #b3d4fc;
 }
@@ -188,9 +188,9 @@ div.code-toolbar > .toolbar button {
   line-height: normal;
   overflow: visible;
   padding: 0;
-  -webkit-user-select: none; /* for button */
-  -moz-user-select: none;
-  -ms-user-select: none;
+  --webkit-user-select: none; /* for button */
+  ---moz-user-select: none;
+  --ms-user-select: none;
 }
 
 div.code-toolbar > .toolbar a,

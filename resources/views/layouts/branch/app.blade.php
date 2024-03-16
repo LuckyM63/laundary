@@ -25,22 +25,22 @@
             overflow-y: auto !important;
         }
 
-        ::-webkit-scrollbar-track {
+        ::--webkit-scrollbar-track {
             box-shadow: inset 0 0 1px #cfcfcf;
             /*border-radius: 5px;*/
         }
 
-        ::-webkit-scrollbar {
+        ::--webkit-scrollbar {
             width: 3px;
         }
 
-        ::-webkit-scrollbar-thumb {
+        ::--webkit-scrollbar-thumb {
             background: #c1c1c1;
             /*border-radius: 5px;*/
         }
 
-        ::-webkit-scrollbar-thumb:hover {
-            background: #FC6A57;
+        ::--webkit-scrollbar-thumb:hover {
+            background: #006ae5;
         }
     </style> -->
 
@@ -228,7 +228,7 @@
             type: 'warning',
             showCancelButton: true,
             cancelButtonColor: 'default',
-            confirmButtonColor: '#FC6A57',
+            confirmButtonColor: '#006ae5',
             cancelButtonText: '{{ translate('No') }}',
             confirmButtonText: '{{ translate('Yes') }}',
             reverseButtons: true
@@ -246,7 +246,7 @@
             type: 'warning',
             showCancelButton: true,
             cancelButtonColor: 'default',
-            confirmButtonColor: '#FC6A57',
+            confirmButtonColor: '#006ae5',
             cancelButtonText: '{{ translate('No') }}',
             confirmButtonText: '{{ translate('Yes') }}',
             reverseButtons: true

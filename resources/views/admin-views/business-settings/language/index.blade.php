@@ -356,7 +356,7 @@
                 title: '{{translate('Are you sure to delete this')}}?',
                 text: "{{translate('You will not be able to revert this')}}!",
                 showCancelButton: true,
-                confirmButtonColor: '#FC6A57',
+                confirmButtonColor: '#006ae5',
                 cancelButtonColor: 'secondary',
                 confirmButtonText: '{{translate('Yes, delete it')}}!',
                 reverseButtons: true

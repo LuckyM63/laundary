@@ -605,6 +605,8 @@
                                         <img width="17" src="{{asset('public/assets/admin/img/icons/assain_delivery_man.png')}}" alt="">
                                         {{translate('Assign_Delivery_Man')}}
                                     </a>
+
+                                   
                                 @endif
                             @endif
                             {{-- counter --}}
@@ -1152,7 +1154,7 @@
                 type: 'warning',
                 showCancelButton: true,
                 cancelButtonColor: 'default',
-                confirmButtonColor: '#FC6A57',
+                confirmButtonColor: '#006ae5',
                 cancelButtonText: '{{translate("No")}}',
                 confirmButtonText:'{{translate("Yes")}}',
                 reverseButtons: true

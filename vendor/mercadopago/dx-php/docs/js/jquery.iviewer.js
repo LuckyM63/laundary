@@ -893,7 +893,7 @@ $.ui.iviewer.ImageObject = function(do_anim) {
             var cssVal = 'rotate(' + deg + 'deg)',
                 img = this._img;
 
-            jQuery.each(['', '-webkit-', '-moz-', '-o-', '-ms-'], function(i, prefix) {
+            jQuery.each(['', '--webkit-', '--moz-', '-o-', '-ms-'], function(i, prefix) {
                 img.css(prefix + 'transform', cssVal);
             });
 
