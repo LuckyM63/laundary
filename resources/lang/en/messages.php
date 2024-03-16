@@ -1909,4 +1909,5 @@
   'wash' => 'Wash',
   'Washer man' => 'Washer man',
   'Location' => 'Location',
+  'Copy Location' => 'Copy Location',
 );
