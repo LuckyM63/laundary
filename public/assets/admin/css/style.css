@@ -159,7 +159,7 @@
 .navbar-vertical-aside-has-menu.show > .nav-link,
 .navbar-vertical .navbar-nav.nav-tabs .active > .nav-link,
 .navbar-vertical .navbar-nav.nav-tabs .active.nav-link {
-  background: rgba(103, 136, 255, 0.1);
+  background: rgba(255, 103, 103, 0.1);
   border-radius: 5px;
 }
 

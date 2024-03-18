@@ -661,7 +661,7 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- <div class="col-lg-4 col-sm-6 mb-4">
                             @php($vnv_status=\App\CentralLogics\Helpers::get_business_settings('toggle_veg_non_veg'))
                             <div class="form-control d-flex justify-content-between align-items-center gap-3">
                                 <div>
@@ -678,7 +678,7 @@
                                     <span class="switcher_control"></span>
                                 </label>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="col-lg-4 col-sm-6 mb-4">
                             @php($ev=\App\Model\BusinessSetting::where('key','email_verification')->first()->value)
